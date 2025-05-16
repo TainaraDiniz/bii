@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="IMAGENS/logo-icon.png" type="image/x-icon">
+    <meta name="description" content="bianca Sobrancelhas. Atedimento especializado para melhor lhe atender.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belanosima:wght@400;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=M+PLUS+Rounded+1c&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sigmar&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+
+<title>BIANCA OCAMPOS | ESPECIALISTA DEM SOBRANCELHAS</title>
+</head>
+<body>
+    <header id="header">
+        <a id="logo" href="">Bianca Ocampos | Especialista em Sobrancelhas</a>
+       <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li><a href="#sobre" alt="m-e-n-u">Sobre mim</a></li> 
+            <li><a href="#serviços" alt="m-e-n-u">Serviços</a></li> 
+          </ul>
+        </nav>
+      </header>
+      <script src="JS/script.js"></script>
+        </header>
+        <main>
+            <div class="container">
+            <div class="card-assimetrico">
+                <img src="bianca.png" alt="Imagem do Card">
+              </div>
+                
+                <div class="side-by-side" id="sobre"> 
+                    <div class="container-sobre">
+                    <h1 class="descricao">Venha realçar sua beleza comigo!</h1>
+                <P class="bianca-descricao" id="sobre">
+                     Me chamo Bianca Campos especialista em sobrancelhas e cilios, há 7 anos oferencendo serviços profissionais e personalizados para valorizar ainda mais sua beleza única.  
+                Cada atendimento é feito com dedicação e técnicas modernas, garantindo resultados que vão encantar você.<br>
+
+                    <br> Estou localizada em Sidrolândia - Mato Grosso do Sul, e será um prazer cuidar de você.</P>                    
+                </div>
+            </div> 
+            </div>
+            
+
+        <section class="Início">
+            <h1 class="frasedeimpacto">Cuidados personalizados com cuidado e carinho:</h1>
+  
+        <section class="frase-de-impacto-2">
+            <p class="cuidado-sobrancelhas">Manter as sobrancelhas bem cuidadas é essencial para realçar a beleza natural e trazer harmonia ao rosto. Um bom design não só valoriza os olhos, como também confere elegância e sofisticação. <br> 
+                <br> Quando bem-feitas ajudam a compor um visual mais polido e profissional, aumentando a confiança e a autoestima.</p>
+               <section class="botao">
+                     <a href="https://wa.me/5567996559354" class="button">AGENDE SEU HORÁRIO COMIGO!</a></button> 
+            </section>
+        </section>
+
+        <section calss="galeria-de-fotos">
+            <div class="container-galeria">
+        <div class="galeria">
+            <!-- <button class="btn proxima" onclick="mudarFoto(-1)">&#10094;</button> -->
+            <img id="imagem" src="servicos4.png" alt="Foto da galeria">
+            <button class="btn proxima" onclick="mudarFoto(1)">&#10095;</button> 
+        </div>
+        <div class="lista-de-servicos">
+        <div class="container-servicos" id="serviços">
+            <ul class="servicos">
+                <h2 class="titulo-servicos">Serviços</h2>
+                <li>Micropigmentação de Sobrancelhas</li>
+                <li>Dermaplaning (rosto)</li>
+                <li>Alongamento de Cílios</li>
+                <li>Design com Henna</li>
+                <li>Design de Sobrancelhas</li>
+                <li>Buço com Cera</li>
+            </ul>
+        </div>
+    </div>
+    </section>
+        <script>
+            const imagens = [
+                "servicos1.png",
+                "servicos2.png",
+                "servicos3.png",
+            ];
+            let indiceAtual = 0;
+    
+            function mudarFoto(direcao) {
+                indiceAtual = (indiceAtual + direcao + imagens.length) % imagens.length;
+                document.getElementById("imagem").src = imagens[indiceAtual];
+            }
+        </script>
+        </section>
+        <section class="linha">
+            <div class="triangulo"></div>
+            <div class="triangulo-invertido"></div>
+        </section>
+
+        <section class="personalizacao">
+            <div class="container-personalizacao">
+                <h2 class="titulo-personalizacao">Cuidados Personalizados</h2>
+                <p class="texto-personalizacao">Cada cliente é único e merece um atendimento especial. Aqui, você encontrará serviços personalizados que atendem às suas necessidades e desejos. Venha descobrir o que podemos fazer por você!</p>
+            </div>
+            </section>
+            <section class="linha-2">
+                <div class="triangulo-2"></div>
+                <div class="triangulo-invertido-2"></div>
+            </section>
+
+            <!-- ...código existente... -->
+
+<section class="galeria-feedback">
+  <h2 class="titulo-galeria">Feedback das minhas clientes</h2>
+  <div class="container-galeria">
+    <button class="btn voltar" onclick="mudarFeedback(-1)">&#10094;</button>
+    <img id="feedback-img" src="feed1.png" alt="Feedback do cliente" style="max-width:300px; border-radius:10px;">
+    <button class="btn avancar" onclick="mudarFeedback(1)">&#10095;</button>
+  </div>
+</section>
+<script>
+  const feedbacks = [
+    "feed1.png",
+    "feed2.png",
+    "feed3.png",
+    "comentario1.jpeg",
+  ];
+
+  let indiceFeedback = 0;
+
+  function mudarFeedback(direcao) {
+    indiceFeedback = (indiceFeedback + direcao + feedbacks.length) % feedbacks.length;
+    document.getElementById("feedback-img").src = feedbacks[indiceFeedback];
+  }
+</script>
+
+<!-- ...código existente... -->
+
+      <section class="final">
+            <h1 class="frase-final">PORQUE INVESTIR EM SOBRANCELHAS E CILÍOS</h1>
+            <p class="cuidado-sobrancelhas">Cuidar se si é um ato de amor próprio, tire um tempo para investir e realçar sua beleza natural.</p>
+        </section>
+
+    </main>
+    <footer>
+        <p class="fim">&copy; Desenvolvido por  <a href="https://www.tekinara.com.br/" class="site-tekinara">TEKINARA</a>  2025. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
